@@ -15,7 +15,7 @@ var liste = ["Pommes", "Poires", "Prunes"];
 	console.log(liste[2]); // "Prunes"
 	console.log(liste[liste.length - 1] ); // "Prunes"
 
-console.log(liste);
+console.log(liste);//il va d'abord lire tout le code puis ensuite afficher
 console.log(liste[1]);
 
 liste.pop(); //retirer le dernier élément
@@ -36,15 +36,42 @@ for (var i = 0; i < tableau.length; i++) {
 	console.log(addition);
 
 // Exercice : Vos meilleurs choix
+
+// Solution 1 
 var acteurs = ["Emma Stone", "Jennifer Aniston", "Sandra Bullock"];
 	console.log("Le numéro 1 est " + acteurs[0] + " - Le numéro 2 est " + acteurs[1] + " - Le numéro 3 est " + acteurs[2]);
 
+
+// Solution 2
+var acteurs = ["Emma Stone", "Jennifer Aniston", "Sandra Bullock"];
+for (var i = 0; i <= acteurs.length-1; i++) {
+	console.log ("Le numéro " + (i+1) + " est " + acteurs[i]);
+}
+
+// Solution 3
+var acteurs = ["Emma Stone", "Jennifer Aniston", "Sandra Bullock"];
+for (var i = acteurs.length - 1; i >= 0; i--) {
+	console.log ("Le numéro " + (i+1) + " est " + acteurs[i]);
+}
+
+// Solution bonus 
+var acteurs = ["Emma Stone", "Jennifer Aniston", "Sandra Bullock"];
+var position = ["Le premier est ", "Le deuxième est ", "Le troisième est "];
+
+
+for (var i = 0; i < acteurs.length; i++) {
+	
+	console.log (position[i] + acteurs[i]);
+}
+
+
 // Exercice : clone
-// solution sans boucle
-// var MarioWorld = ["Mario", "Luigi", "Peach"];
-// 	MarioWorld.push("Browser");
-// 	console.log(MarioWorld);
-// solution AVEC boucle :
+// solution SANS boucle (simple fait by myself):
+var MarioWorld = ["Mario", "Luigi", "Peach"];
+	console.log(MarioWorld);
+	MarioWorld.push("Bowser");
+	console.log(MarioWorld);
+// solution AVEC boucle (compliqué pour rien, fait par un apprenant):
 var marioArray = ["Mario", "Luigi", "Peach"];
 var bowserArray = [];
 for (var i = 0; i < marioArray.length; i++){

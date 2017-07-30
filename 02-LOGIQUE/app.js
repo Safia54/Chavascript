@@ -1,32 +1,32 @@
 //Exercice : Langues
 var langue = "fr";
-var message = "Je parle le french";
+var message = "Bonjour tout le monde !";
 
 if(langue === "fr"){
   console.log(message);
 } else if(langue === "en") {
-  console.log("je parle l'english");
+  console.log("Hello world !");
 } else if (langue === "es") {
-  console.log("je parle le spanish");
+  console.log("Hola mundo !");
 }
 
 //Exercices : Affichage des scores
 var score  = "100";
-var resultat = "score";
+var resultat = "Vous êtes classé au "; //pas compris comment utiliser la variable resultat dans cet exercice
 
 if (score >= 90) {
-	console.log("Rang A");
+	console.log(resultat + "Rang A");
 } else if(score < 90) {
-	console.log("Rang B"); 
+	console.log(resultat + "Rang B"); 
 } else if(score <= 50){
-	console.log("Rang C"); 
+	console.log(resultat + "Rang C"); 
 }
 
 //Exercices : Mettre au pluriel
 var mot = "pomme";
-var nbr = "54";
-var resultat = mot + "s";
+var nbr = 54;
+var resultat = "J'ai " + nbr + " " + mot + "s";
 
-if (mot = "pomme") {
+if (nbr > 1) {
 	console.log(resultat);
 }

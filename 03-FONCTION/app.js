@@ -12,7 +12,7 @@ function FaisQuelqueChose(){
 }
 
 var MaFonction = function(prenom = "Alex"){
-	var pays = prenom + "Belgique";
+	var pays = prenom + " Belgique";
 	return pays;
 }
 
@@ -44,7 +44,7 @@ function multiplication(a, b){
 }
 
 function pourcentage (a, b){
-	var pourcentage = a/100 * b ;
+	var pourcentage = a/b * 100 + "%";
 	return pourcentage;
 }
 
@@ -56,5 +56,5 @@ function vitesse (a,b){
 console.log(soustraction(6,2));
 console.log(division(6,2));
 console.log(multiplication(6,2));
-console.log(pourcentage(6,2));
-console.log(vitesse(6,2));
+console.log(pourcentage(17,20));
+console.log(vitesse(100,2));
